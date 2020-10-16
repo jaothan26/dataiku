@@ -1,12 +1,117 @@
 {
   "inputDatasetSmartName": "Clean",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "ColumnRenamer",
+        "params": {
+          "renamings": [
+            {
+              "from": "col_0",
+              "to": "date"
+            },
+            {
+              "from": "col_1",
+              "to": "user"
+            },
+            {
+              "from": "col_2",
+              "to": "tweet"
+            },
+            {
+              "from": "col_3",
+              "to": "name"
+            },
+            {
+              "from": "col_4",
+              "to": "description"
+            },
+            {
+              "from": "col_5",
+              "to": "url"
+            },
+            {
+              "from": "col_7",
+              "to": "nb_tweets"
+            },
+            {
+              "from": "col_8",
+              "to": "nb_followers"
+            },
+            {
+              "from": "col_9",
+              "to": "favorites"
+            },
+            {
+              "from": "col_10",
+              "to": "following"
+            },
+            {
+              "from": "col_11",
+              "to": "location"
+            },
+            {
+              "from": "col_12",
+              "to": "address"
+            },
+            {
+              "from": "col_13",
+              "to": "geo"
+            },
+            {
+              "from": "col_14",
+              "to": "human_or_compagny"
+            },
+            {
+              "from": "col_15",
+              "to": "sentiment"
+            }
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "col_0": 183,
+      "col_1": 120,
+      "col_2": 300,
+      "col_3": 225,
+      "col_4": 300,
+      "col_5": 300,
+      "col_6": 100,
+      "col_7": 100,
+      "col_8": 100,
+      "col_9": 100,
+      "col_10": 218,
+      "col_11": 300,
+      "col_12": 239,
+      "col_13": 127,
+      "col_14": 100,
+      "col_15": 100,
+      "col_16": 100,
+      "date": 183,
+      "user": 120,
+      "tweet": 300,
+      "name": 225,
+      "description": 300,
+      "url": 300,
+      "nb_tweets": 100,
+      "nb_followers": 105,
+      "favorites": 100,
+      "following": 218,
+      "location": 300,
+      "col_": 100,
+      "address": 100,
+      "geo": 127,
+      "human_or_compagny": 143
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -40,7 +145,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -48,11 +155,11 @@
   "charts": [],
   "name": "Analyze Clean",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1602864469991
+    "lastModifiedOn": 1602864778293
   },
   "creationTag": {
     "versionNumber": 0,
