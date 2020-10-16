@@ -25,6 +25,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
   },
