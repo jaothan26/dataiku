@@ -8,7 +8,7 @@
     "columnWidthsByName": {
       "date": 183,
       "user": 120,
-      "tweet": 300,
+      "tweet": 530,
       "name": 218,
       "description": 300,
       "url": 246,
@@ -23,7 +23,7 @@
       "sentiment": 113
     },
     "coloring": {
-      "scheme": "MEANING_AND_STATUS",
+      "scheme": "INDIVIDUAL_COLUMNS_VALUES",
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
