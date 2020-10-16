@@ -1,12 +1,49 @@
 {
   "inputDatasetSmartName": "sentiment_clean",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "FilterOnValue",
+        "params": {
+          "values": [
+            "0.0"
+          ],
+          "matchingMode": "FULL_STRING",
+          "normalizationMode": "EXACT",
+          "action": "REMOVE_ROW",
+          "booleanMode": "AND",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "sentiment"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "date": 183,
+      "user": 120,
+      "tweet": 300,
+      "name": 218,
+      "description": 300,
+      "url": 246,
+      "nb_tweets": 113,
+      "nb_followers": 105,
+      "favorites": 100,
+      "following": 100,
+      "location": 211,
+      "address": 300,
+      "geo": 239,
+      "human_or_company": 135,
+      "sentiment": 113
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -40,7 +77,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -48,11 +87,11 @@
   "charts": [],
   "name": "Analyze sentiment_clean",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1602865359171
+    "lastModifiedOn": 1602865380395
   },
   "creationTag": {
     "versionNumber": 0,
