@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1602847855122
+    "lastModifiedOn": 1602853562225
   },
   "creationTag": {
     "versionNumber": 0,
@@ -110,19 +110,19 @@
       },
       {
         "name": "nb_tweets",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "nb_followers",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "favorites",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "following",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "location",
@@ -139,9 +139,13 @@
       {
         "name": "human_or_company",
         "type": "string"
+      },
+      {
+        "name": "sentiment",
+        "type": "double"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "metrics": {
     "probes": [
