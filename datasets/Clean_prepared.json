@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1602864928624
+    "lastModifiedOn": 1602864976250
   },
   "creationTag": {
     "versionNumber": 0,
@@ -140,18 +140,6 @@
       },
       {
         "name": "human_or_compagny",
-        "type": "string"
-      },
-      {
-        "name": "sentiment",
-        "type": "string"
-      },
-      {
-        "name": "col_15",
-        "type": "string"
-      },
-      {
-        "name": "col_16",
         "type": "string"
       }
     ],
