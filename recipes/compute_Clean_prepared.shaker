@@ -92,10 +92,6 @@
           {
             "from": "col_13",
             "to": "human_or_compagny"
-          },
-          {
-            "from": "col_14",
-            "to": "sentiment"
           }
         ]
       },
@@ -118,6 +114,22 @@
         "matchingMode": "FULL_STRING",
         "action": "REMOVE_ROW",
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_16",
+          "col_15",
+          "col_14"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
