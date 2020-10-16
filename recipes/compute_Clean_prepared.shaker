@@ -25,6 +25,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
   },
@@ -61,42 +62,62 @@
             "to": "url"
           },
           {
-            "from": "col_7",
+            "from": "col_6",
             "to": "nb_tweets"
           },
           {
-            "from": "col_8",
+            "from": "col_7",
             "to": "nb_followers"
           },
           {
-            "from": "col_9",
+            "from": "col_8",
             "to": "favorites"
           },
           {
-            "from": "col_10",
+            "from": "col_9",
             "to": "following"
           },
           {
-            "from": "col_11",
+            "from": "col_10",
             "to": "location"
           },
           {
-            "from": "col_12",
+            "from": "col_11",
             "to": "address"
           },
           {
-            "from": "col_13",
+            "from": "col_12",
             "to": "geo"
           },
           {
-            "from": "col_14",
+            "from": "col_13",
             "to": "human_or_compagny"
           },
           {
-            "from": "col_15",
+            "from": "col_14",
             "to": "sentiment"
           }
         ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "date"
+        ],
+        "values": [
+          "date"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -113,6 +134,7 @@
     "date": 183,
     "favorites": 100,
     "col_11": 300,
+    "sentiment": 100,
     "nb_followers": 105,
     "description": 300,
     "col_6": 100,
