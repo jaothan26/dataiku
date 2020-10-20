@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1603228360018
+    "lastModifiedOn": 1603228541299
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,36 +87,12 @@
   "schema": {
     "columns": [
       {
-        "name": "How much do you know about #WestNileVirus",
+        "name": "tweet",
         "type": "string"
       },
       {
-        "name": "Take our quiz. http://ow.ly/Qlytx ",
-        "type": "string"
-      },
-      {
-        "name": "col_2",
-        "type": "string"
-      },
-      {
-        "name": "col_3",
-        "type": "string"
-      },
-      {
-        "name": "col_4",
-        "type": "string"
-      },
-      {
-        "name": "col_5",
-        "type": "string"
-      },
-      {
-        "name": "col_6",
-        "type": "string"
-      },
-      {
-        "name": "col_7",
-        "type": "string"
+        "name": "length_tweet",
+        "type": "bigint"
       }
     ],
     "userModified": true
