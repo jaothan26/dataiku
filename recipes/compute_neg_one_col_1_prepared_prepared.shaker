@@ -67,7 +67,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnNumericalRange",
@@ -82,6 +82,36 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RegexpExtractor",
+      "params": {
+        "found_col": true,
+        "extractAllOccurrences": false,
+        "prefix": "mentions",
+        "column": "col_0",
+        "pattern": "@(\\w+)"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "col_0",
+        "outCol": "tweet_simplified",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english",
+        "clearStopWords": true,
+        "stem": true
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -94,7 +124,10 @@
   "columnWidthsByName": {
     "length_tweet": 105,
     "contains_bite": 113,
-    "col_0": 828
+    "tweet_simplified": 502,
+    "mentionsfound": 113,
+    "col_0": 828,
+    "mentions1": 100
   },
   "sorting": [],
   "globalSearchQuery": "",
