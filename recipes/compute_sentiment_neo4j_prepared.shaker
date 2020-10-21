@@ -25,8 +25,55 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "length(tweet)",
+        "column": "tweet_length"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 25.0,
+        "max": 140.0,
+        "booleanMode": "AND",
+        "columns": [
+          "tweet_length"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "tweet",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english",
+        "clearStopWords": true,
+        "stem": true
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +81,24 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 183,
+    "favorites": 100,
+    "sentiment": 113,
+    "nb_followers": 105,
+    "address": 300,
+    "description": 300,
+    "human_or_company": 135,
+    "tweet": 300,
+    "url": 246,
+    "geo": 239,
+    "nb_tweets": 113,
+    "following": 100,
+    "name": 218,
+    "location": 211,
+    "tweet_length": 105,
+    "user": 120
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
