@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1603262667015
+    "lastModifiedOn": 1603262726245
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,68 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "user",
+        "type": "string"
+      },
+      {
+        "name": "tweet",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "url",
+        "type": "string"
+      },
+      {
+        "name": "nb_tweets",
+        "type": "double"
+      },
+      {
+        "name": "nb_followers",
+        "type": "double"
+      },
+      {
+        "name": "favorites",
+        "type": "double"
+      },
+      {
+        "name": "following",
+        "type": "double"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "address",
+        "type": "string"
+      },
+      {
+        "name": "geo",
+        "type": "string"
+      },
+      {
+        "name": "human_or_company",
+        "type": "string"
+      },
+      {
+        "name": "sentiment",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
