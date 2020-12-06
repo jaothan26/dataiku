@@ -1,3 +1,7 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+r.content
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 from dataiku import Dataset, Folder
@@ -15,19 +19,18 @@ from pandas.io.json import json_normalize
 counter = 1
 freshdesk_companies_final = pd.DataFrame()
 tmp = True
-
 # Pull data using Freshdesk API using companies endpoint
 while tmp:
-    FRESHDESK_ENDPOINT = "https://XXXXX.freshdesk.com" # check if you have configured https, modify accordingly
-    FRESHDESK_KEY = "API_KEY"
+    FRESHDESK_ENDPOINT = "https://newaccount160716329665.freshdesk.com" # check if you have configured https, modify accordingly
+    FRESHDESK_KEY = "OgEeDb5wzXsh9Ryt8DMM"
     r = requests.get(FRESHDESK_ENDPOINT + '/api/v2/companies?page=' + str(counter) + '&per_page=100',auth=(FRESHDESK_KEY, "X"))
     if r.content == '[]':
         break
     freshdesk_companies = pd.DataFrame(json_normalize(json.loads(r.content)))
     freshdesk_companies_final = freshdesk_companies_final.append(freshdesk_companies)
-    print counter 
+    print (counter)
     counter += 1
 
-# Write resulting dataframe into the output dataset 
+# Write resulting dataframe into the output dataset
 freshdesk_companies_list = dataiku.Dataset("Freshdesk_companies_list")
 freshdesk_companies_list.write_with_schema(freshdesk_companies_final)
