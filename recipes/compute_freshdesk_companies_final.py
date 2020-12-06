@@ -11,9 +11,6 @@ import requests
 import base64
 from pandas.io.json import json_normalize
 
-# Read recipe inputs
-#data15_17_joined_author_data = dataiku.Dataset("data15_17_joined_author_data")
-#data15_17_joined_author_data_df = data15_17_joined_author_data.get_dataframe()
 
 # Create Pandas dataframe
 counter = 1
