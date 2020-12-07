@@ -113,7 +113,7 @@
       }
     }
   },
-  "name": "popo",
+  "name": "popo (recipe)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -169,11 +169,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607361632444
+    "lastModifiedOn": 1607361648044
   },
   "creationTag": {
     "versionNumber": 0,
@@ -182,7 +182,7 @@
     },
     "lastModifiedOn": 1602847805505
   },
-  "shortDesc": "The project *popo* was created by John GCK on Oct 16th 2020",
+  "shortDesc": "The project *popo* was created by John GCK on Oct 16th 2020\nThe project *POPO_RECIPE* was copied from *TEST_LGT* on *dev* branch by John GCK on Dec 07th 2020",
   "tags": [
     "duplicated"
   ],
