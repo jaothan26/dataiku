@@ -114,7 +114,6 @@
     }
   },
   "name": "popo",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -170,11 +169,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607109619590
+    "lastModifiedOn": 1607361632444
   },
   "creationTag": {
     "versionNumber": 0,
@@ -184,7 +183,9 @@
     "lastModifiedOn": 1602847805505
   },
   "shortDesc": "The project *popo* was created by John GCK on Oct 16th 2020",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
