@@ -1,15 +1,15 @@
 {
   "gitReferences": {
-    "lib1": {
+    "recipe": {
       "remote": "https://jaothan26:Bonjour09Achanger@github.com/jaothan26/dataiku.git",
-      "checkout": "refs/heads/dev",
-      "remotePath": "lib",
-      "lastHash": "a2c38488c734fde009ca25c3e23c3552029db1ec"
+      "checkout": "refs/heads/recipe",
+      "remotePath": "",
+      "lastHash": "8aeb6b945f8334a8e70ebe39e7e7e9d17ce77973"
     }
   },
   "pythonPath": [
     "python",
-    "lib1"
+    "recipe"
   ],
   "rsrcPath": [
     "R"
