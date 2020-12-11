@@ -1,0 +1,160 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "date"
+    },
+    {
+      "column": "user"
+    },
+    {
+      "column": "tweet"
+    },
+    {
+      "column": "name"
+    },
+    {
+      "column": "description"
+    },
+    {
+      "column": "url"
+    },
+    {
+      "column": "nb_tweets"
+    },
+    {
+      "column": "nb_followers"
+    },
+    {
+      "column": "favorites"
+    },
+    {
+      "column": "following"
+    },
+    {
+      "column": "location"
+    },
+    {
+      "column": "address"
+    },
+    {
+      "column": "geo"
+    },
+    {
+      "column": "human_or_company"
+    },
+    {
+      "column": "sentiment"
+    }
+  ],
+  "globalCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date",
+            "type": "string"
+          },
+          {
+            "name": "user",
+            "type": "string"
+          },
+          {
+            "name": "tweet",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "nb_tweets",
+            "type": "double"
+          },
+          {
+            "name": "nb_followers",
+            "type": "double"
+          },
+          {
+            "name": "favorites",
+            "type": "double"
+          },
+          {
+            "name": "following",
+            "type": "double"
+          },
+          {
+            "name": "location",
+            "type": "string"
+          },
+          {
+            "name": "address",
+            "type": "string"
+          },
+          {
+            "name": "geo",
+            "type": "string"
+          },
+          {
+            "name": "human_or_company",
+            "type": "string"
+          },
+          {
+            "name": "sentiment",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  }
+}

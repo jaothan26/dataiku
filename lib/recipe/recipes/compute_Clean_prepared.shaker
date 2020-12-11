@@ -1,0 +1,186 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "col_0",
+            "to": "date"
+          },
+          {
+            "from": "col_1",
+            "to": "user"
+          },
+          {
+            "from": "col_2",
+            "to": "tweet"
+          },
+          {
+            "from": "col_3",
+            "to": "name"
+          },
+          {
+            "from": "col_4",
+            "to": "description"
+          },
+          {
+            "from": "col_5",
+            "to": "url"
+          },
+          {
+            "from": "col_6",
+            "to": "nb_tweets"
+          },
+          {
+            "from": "col_7",
+            "to": "nb_followers"
+          },
+          {
+            "from": "col_8",
+            "to": "favorites"
+          },
+          {
+            "from": "col_9",
+            "to": "following"
+          },
+          {
+            "from": "col_10",
+            "to": "location"
+          },
+          {
+            "from": "col_11",
+            "to": "address"
+          },
+          {
+            "from": "col_12",
+            "to": "geo"
+          },
+          {
+            "from": "col_13",
+            "to": "human_or_compagny"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "date"
+        ],
+        "values": [
+          "date"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_16",
+          "col_15",
+          "col_14"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "col_10": 218,
+    "date": 183,
+    "favorites": 100,
+    "col_11": 300,
+    "sentiment": 100,
+    "nb_followers": 105,
+    "description": 300,
+    "col_6": 100,
+    "geo": 127,
+    "col_5": 300,
+    "col_4": 300,
+    "col_3": 225,
+    "col_2": 300,
+    "human_or_compagny": 143,
+    "col_1": 120,
+    "col_0": 183,
+    "col_9": 100,
+    "col_8": 100,
+    "col_7": 100,
+    "address": 100,
+    "tweet": 300,
+    "url": 300,
+    "col_": 100,
+    "nb_tweets": 100,
+    "following": 218,
+    "name": 225,
+    "col_16": 100,
+    "location": 300,
+    "col_14": 100,
+    "col_15": 100,
+    "user": 120,
+    "col_12": 239,
+    "col_13": 127
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
