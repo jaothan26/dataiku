@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "lib1": {
+      "remote": "https://jaothan26:Bonjour09Achanger@github.com/jaothan26/dataiku.git",
+      "checkout": "refs/heads/dev",
+      "remotePath": "lib"
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "lib1"
   ],
   "rsrcPath": [
     "R"
