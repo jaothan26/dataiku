@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "recipe": {
+      "remote": "https://jaothan26:Bonjour09Achanger@github.com/jaothan26/dataiku.git",
+      "checkout": "refs/heads/recipe",
+      "remotePath": ""
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "recipe"
   ],
   "rsrcPath": [
     "R"
